@@ -1,0 +1,10 @@
+<HPLMapTrack_FogArea ID="B3D4B8A9E6D8DD77703C39E5DA32058849232E04" Version="1.00">
+    <Section Name="cjwsh@DESKTOP-TKSEJFP">
+        <Objects>
+            <FogArea ID="268442393" Name="FogArea_1" CreStamp="1596262910" ModStamp="1596263040" WorldPos="67 44 -34.75" Rotation="0 0 0" Scale="33 11 76" Color="0.140625 0.140625 0.140625 1" Brightness="1" Start="0" End="125" FalloffExp="5" ShownBacksideWhenOutside="false" ShownBacksideWhenInside="true" Underwater="false" NoiseStrength="0" NoiseSize="8" NoiseTurbulence="0.5 0.5 0.5" Skybox="false" CulledByDistance="false" CulledByFog="true" UID="16 2470 268442393" />
+        </Objects>
+    </Section>
+    <Section Name="cjwsh@DESKTOP-7R3LD3I">
+        <Objects />
+    </Section>
+</HPLMapTrack_FogArea>

@@ -1,0 +1,245 @@
+<HPLMapTrack_Area ID="B3D4B8A9E6D8DD77703C39E5DA32058849232E04" Version="1.00">
+    <Section Name="cjwsh@DESKTOP-TKSEJFP">
+        <Objects>
+            <Area ID="268437948" Name="CrawlArea_1" CreStamp="1595728269" ModStamp="1595991675" WorldPos="40.5 52.5 -21" Rotation="0 0 0" Scale="13.5 10.75 17.75" Active="true" Mesh="" UID="16 1794 268437948" AreaType="Crawl">
+                <UserVariables />
+            </Area>
+            <Area ID="268438526" Name="MapTransferArea_Disposal" CreStamp="1595971467" ModStamp="1595971537" WorldPos="44.5 57 -21" Rotation="0 0 0" Scale="3.25 3 17.75" Active="true" Mesh="" UID="16 2020 268438526" AreaType="MapTransfer">
+                <UserVariables>
+                    <Var Name="BlocksLineOfSight" Value="false" />
+                    <Var Name="EventInstanceTag" Value="" />
+                    <Var Name="UserVar" Value="" />
+                    <Var Name="CC_Entities" Value="" />
+                    <Var Name="CC_Funcs" Value="" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                    <Var Name="ParentAttachLocked" Value="false" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438570" Name="LadderArea_1" CreStamp="1595974133" ModStamp="1595979195" WorldPos="38.25 52.098 -28.5" Rotation="0 -1.5708 0" Scale="0.75 7.5 1" Active="true" Mesh="" UID="16 2049 268438570" AreaType="Ladder">
+                <UserVariables>
+                    <Var Name="Material" Value="metal" />
+                    <Var Name="Exit_Top" Value="Ladder1_Top" />
+                    <Var Name="Exit_TopCrouching" Value="true" />
+                    <Var Name="Exit_Bottom" Value="Ladder1_Bottom" />
+                    <Var Name="Exit_BottomCrouching" Value="true" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438571" Name="PlayerStartArea_1" CreStamp="1595974158" ModStamp="1595977881" WorldPos="44.5 56.5 -24.5" Rotation="-0 3.14159 -0" Scale="0.7 1 0.7" Active="true" Mesh="" UID="16 2048 268438571" AreaType="PlayerStart">
+                <UserVariables>
+                    <Var Name="Crouching" Value="false" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438572" Name="InteractAuxArea_1" CreStamp="1595977505" ModStamp="1595978115" WorldPos="38.5 56 -28.5" Rotation="0 0 0" Scale="0.5 1 1" Active="true" Mesh="" UID="16 2047 268438572" AreaType="InteractAux">
+                <UserVariables>
+                    <Var Name="InteractParent" Value="LadderArea_1" />
+                    <Var Name="UseParentMainBody" Value="true" />
+                    <Var Name="MaxFocusDistance" Value="0.125" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438573" Name="Ladder1_Top" CreStamp="1595977554" ModStamp="1595977567" WorldPos="39.25 56 -28.5" Rotation="0 0 0" Scale="0.25 0.25 0.25" Active="true" Mesh="" UID="16 2045 268438573" AreaType="Trigger">
+                <UserVariables>
+                    <Var Name="BlocksLineOfSight" Value="false" />
+                    <Var Name="EventInstanceTag" Value="" />
+                    <Var Name="UserVar" Value="" />
+                    <Var Name="CC_Entities" Value="" />
+                    <Var Name="CC_Funcs" Value="" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                    <Var Name="ParentAttachLocked" Value="false" />
+                    <Var Name="PlayerLookAtCallback" Value="" />
+                    <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                    <Var Name="PlayerLookAtCheckCenterOfScreen" Value="true" />
+                    <Var Name="PlayerLookAtCheckRayIntersection" Value="true" />
+                    <Var Name="PlayerLookAtMaxDistance" Value="-1" />
+                    <Var Name="PlayerLookAtCallbackDelay" Value="0" />
+                    <Var Name="PlayerInteractCallback" Value="" />
+                    <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                    <Var Name="CanInteractWithoutCallback" Value="false" />
+                    <Var Name="MaxFocusDistance" Value="-1" />
+                    <Var Name="CustomInteractIcon" Value="PushButton" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438574" Name="Ladder1_Bottom" CreStamp="1595978948" ModStamp="1595978984" WorldPos="37.75 48 -28.5" Rotation="0 0 0" Scale="0.25 0.25 0.25" Active="true" Mesh="" UID="16 2046 268438574" AreaType="Trigger">
+                <UserVariables>
+                    <Var Name="BlocksLineOfSight" Value="false" />
+                    <Var Name="EventInstanceTag" Value="" />
+                    <Var Name="UserVar" Value="" />
+                    <Var Name="CC_Entities" Value="" />
+                    <Var Name="CC_Funcs" Value="" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                    <Var Name="ParentAttachLocked" Value="false" />
+                    <Var Name="PlayerLookAtCallback" Value="" />
+                    <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                    <Var Name="PlayerLookAtCheckCenterOfScreen" Value="true" />
+                    <Var Name="PlayerLookAtCheckRayIntersection" Value="true" />
+                    <Var Name="PlayerLookAtMaxDistance" Value="-1" />
+                    <Var Name="PlayerLookAtCallbackDelay" Value="0" />
+                    <Var Name="PlayerInteractCallback" Value="" />
+                    <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                    <Var Name="CanInteractWithoutCallback" Value="false" />
+                    <Var Name="MaxFocusDistance" Value="-1" />
+                    <Var Name="CustomInteractIcon" Value="PushButton" />
+                </UserVariables>
+            </Area>
+            <Area ID="268438655" Name="CrawlArea_2" CreStamp="1595991680" ModStamp="1596078195" WorldPos="21.5 48.5 -30.75" Rotation="0 0 0" Scale="25.25 2 17" Active="true" Mesh="" UID="16 2011 268438655" AreaType="Crawl">
+                <UserVariables />
+            </Area>
+            <Area ID="268439658" Name="CrawlArea_3" CreStamp="1596078172" ModStamp="1596078246" WorldPos="10.25 45.5 -43" Rotation="0 0 0" Scale="4.25 9 8.25" Active="true" Mesh="" UID="16 1289 268439658" AreaType="Crawl">
+                <UserVariables />
+            </Area>
+            <Area ID="268439682" Name="LadderArea_2" CreStamp="1596078853" ModStamp="1596079306" WorldPos="10.5 46.225 -44.75" Rotation="-0 3.14159 -0" Scale="1 0.75 0.75" Active="true" Mesh="" UID="16 1270 268439682" AreaType="Ladder">
+                <UserVariables>
+                    <Var Name="Material" Value="metal" />
+                    <Var Name="Exit_Top" Value="" />
+                    <Var Name="Exit_TopCrouching" Value="False" />
+                    <Var Name="Exit_Bottom" Value="" />
+                    <Var Name="Exit_BottomCrouching" Value="False" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                </UserVariables>
+            </Area>
+            <Area ID="268439683" Name="InteractAuxArea_2" CreStamp="1596078921" ModStamp="1596079005" WorldPos="10.5 48 -44.5" Rotation="0 0 0" Scale="1 1 0.5" Active="true" Mesh="" UID="16 1271 268439683" AreaType="InteractAux">
+                <UserVariables>
+                    <Var Name="InteractParent" Value="LadderArea_2" />
+                    <Var Name="UseParentMainBody" Value="true" />
+                    <Var Name="MaxFocusDistance" Value="0.125" />
+                </UserVariables>
+            </Area>
+            <Area ID="268442203" Name="PathNodeArea_1" CreStamp="1596233664" ModStamp="1596233688" WorldPos="56.25 39.5 -34.5" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 124 268442203" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442204" Name="PathNodeArea_2" CreStamp="1596233709" ModStamp="1596233713" WorldPos="56.25 39.5 -36.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 123 268442204" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442205" Name="PathNodeArea_3" CreStamp="1596233716" ModStamp="1596233721" WorldPos="56.25 39.5 -37.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 206 268442205" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442206" Name="PathNodeArea_4" CreStamp="1596233726" ModStamp="1596233730" WorldPos="56.25 39.25 -39" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 135 268442206" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442207" Name="PathNodeArea_5" CreStamp="1596233734" ModStamp="1596233739" WorldPos="56.25 39 -40.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 204 268442207" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442208" Name="PathNodeArea_6" CreStamp="1596233749" ModStamp="1596233751" WorldPos="56.25 39 -41.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 114 268442208" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442209" Name="PathNodeArea_7" CreStamp="1596233755" ModStamp="1596233757" WorldPos="56.25 39 -44.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 113 268442209" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442210" Name="PathNodeArea_8" CreStamp="1596233755" ModStamp="1596233757" WorldPos="56.25 39 -43.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 209 268442210" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442211" Name="PathNodeArea_9" CreStamp="1596233770" ModStamp="1596233773" WorldPos="56.25 39 -50.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 213 268442211" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442212" Name="PathNodeArea_10" CreStamp="1596233770" ModStamp="1596233773" WorldPos="56.25 39 -49.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 202 268442212" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442213" Name="PathNodeArea_11" CreStamp="1596233770" ModStamp="1596233773" WorldPos="56.25 39 -47.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 137 268442213" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442214" Name="PathNodeArea_12" CreStamp="1596233770" ModStamp="1596233773" WorldPos="56.25 39 -46.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 203 268442214" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442215" Name="PathNodeArea_13" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -62.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 212 268442215" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442216" Name="PathNodeArea_14" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -61.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 211 268442216" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442217" Name="PathNodeArea_15" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -59.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 81 268442217" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442218" Name="PathNodeArea_16" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -58.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 207 268442218" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442219" Name="PathNodeArea_17" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -56.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 210 268442219" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442220" Name="PathNodeArea_18" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -55.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 143 268442220" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442221" Name="PathNodeArea_19" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -53.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 208 268442221" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442222" Name="PathNodeArea_20" CreStamp="1596233788" ModStamp="1596233797" WorldPos="56.25 39 -52.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 205 268442222" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442223" Name="PathNodeArea_21" CreStamp="1596233842" ModStamp="1596233845" WorldPos="56.25 39 -70.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 80 268442223" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442224" Name="PathNodeArea_22" CreStamp="1596233842" ModStamp="1596233845" WorldPos="56.25 39 -68.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 102 268442224" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442225" Name="PathNodeArea_23" CreStamp="1596233842" ModStamp="1596233845" WorldPos="56.25 39 -67.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 141 268442225" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442226" Name="PathNodeArea_24" CreStamp="1596233842" ModStamp="1596233845" WorldPos="56.25 39 -65.75" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 79 268442226" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442227" Name="PathNodeArea_25" CreStamp="1596233842" ModStamp="1596233845" WorldPos="56.25 39 -64.25" Rotation="0 0 0" Scale="0.5 0.5 0.5" Active="true" Mesh="" UID="16 100 268442227" AreaType="PathNode">
+                <UserVariables />
+            </Area>
+            <Area ID="268442245" Name="HideArea_1" CreStamp="1596243997" ModStamp="1596244083" WorldPos="66.25 39.75 -43.5" Rotation="0 0 0" Scale="4.5 1.5 1.75" Active="true" Mesh="" UID="16 2651 268442245" AreaType="Hide">
+                <UserVariables>
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                    <Var Name="Prio" Value="0" />
+                    <Var Name="RequiresCrouch" Value="true" />
+                    <Var Name="VisibilityRange" Value="3" />
+                    <Var Name="RelativeVisRange" Value="false" />
+                </UserVariables>
+            </Area>
+            <Area ID="268442389" Name="ClimbAreaPos_1" CreStamp="1596261464" ModStamp="1596261619" WorldPos="83.25 42 -34.5" Rotation="0 0 0" Scale="0.25 0.25 0.25" Active="true" Mesh="" UID="16 2469 268442389" AreaType="Trigger">
+                <UserVariables>
+                    <Var Name="BlocksLineOfSight" Value="false" />
+                    <Var Name="EventInstanceTag" Value="" />
+                    <Var Name="UserVar" Value="" />
+                    <Var Name="CC_Entities" Value="" />
+                    <Var Name="CC_Funcs" Value="" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                    <Var Name="ParentAttachLocked" Value="false" />
+                    <Var Name="PlayerLookAtCallback" Value="" />
+                    <Var Name="PlayerLookAtCallbackAutoRemove" Value="true" />
+                    <Var Name="PlayerLookAtCheckCenterOfScreen" Value="true" />
+                    <Var Name="PlayerLookAtCheckRayIntersection" Value="true" />
+                    <Var Name="PlayerLookAtMaxDistance" Value="-1" />
+                    <Var Name="PlayerLookAtCallbackDelay" Value="0" />
+                    <Var Name="PlayerInteractCallback" Value="" />
+                    <Var Name="PlayerInteractCallbackAutoRemove" Value="false" />
+                    <Var Name="CanInteractWithoutCallback" Value="false" />
+                    <Var Name="MaxFocusDistance" Value="-1" />
+                    <Var Name="CustomInteractIcon" Value="PushButton" />
+                </UserVariables>
+            </Area>
+            <Area ID="268442390" Name="ClimbArea_1" CreStamp="1596261528" ModStamp="1596261633" WorldPos="82.5 42 -34.5" Rotation="0 -1.5708 0" Scale="1.25 1 0.25" Active="true" Mesh="" UID="16 2468 268442390" AreaType="Climb">
+                <UserVariables>
+                    <Var Name="Crouch" Value="true" />
+                    <Var Name="FeetPosition" Value="ClimbAreaPos_1" />
+                    <Var Name="CanBeClimbed" Value="true" />
+                    <Var Name="ParentAttachEntity" Value="" />
+                    <Var Name="ParentAttachUseRotation" Value="true" />
+                    <Var Name="ParentAttachBody" Value="" />
+                </UserVariables>
+            </Area>
+            <Area ID="268442750" Name="HideArea_2" CreStamp="1597298295" ModStamp="1597298371" WorldPos="66.25 39.5 -43.5" Rotation="0 0 0" Scale="3.75 1.5 1.5" Active="true" Mesh="" UID="16 2460 268442750" AreaType="Crawl">
+                <UserVariables />
+            </Area>
+        </Objects>
+    </Section>
+    <Section Name="cjwsh@DESKTOP-7R3LD3I">
+        <Objects />
+    </Section>
+</HPLMapTrack_Area>

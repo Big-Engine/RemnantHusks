@@ -1,0 +1,171 @@
+<Entity>
+    <ModelData>
+        <Entities />
+        <Mesh Filename="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee.fbx">
+            <SubMesh ID="0" Name="Body" CreStamp="0" ModStamp="1595201501" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="19738" Material="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee_Body.mat" />
+            <SubMesh ID="1" Name="Arm_Right" CreStamp="0" ModStamp="1595201514" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="6826" Material="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee_Arms.mat" />
+            <SubMesh ID="2" Name="Arm_Left" CreStamp="0" ModStamp="1595201519" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="6898" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Arms.mat" />
+            <SubMesh ID="3" Name="Head" CreStamp="0" ModStamp="1595201485" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="9432" Material="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee_Head.mat" />
+            <SubMesh ID="4" Name="Eye" CreStamp="0" ModStamp="1595201530" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="1376" Material="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee_Eye.mat" />
+            <SubMesh ID="5" Name="Tendril1" CreStamp="0" ModStamp="1595201559" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Tendrils.mat" />
+            <SubMesh ID="6" Name="Tendril2" CreStamp="0" ModStamp="1595201562" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Tendrils.mat" />
+            <SubMesh ID="7" Name="Tendril3" CreStamp="0" ModStamp="1595201543" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/McGee_Tendrils.mat" />
+            <SubMesh ID="8" Name="Tendril4" CreStamp="0" ModStamp="1595201556" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Tendrils.mat" />
+            <SubMesh ID="9" Name="Tendril5" CreStamp="0" ModStamp="1595201553" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Tendrils.mat" />
+            <SubMesh ID="10" Name="Tendril6" CreStamp="0" ModStamp="1595201549" WorldPos="0 0 0" Rotation="0 0 0" Scale="1 1 1" TriCount="3816" Material="mods/GenericStory/entities/cantaffordaname/characters/test_character/McGee_Tendrils.mat" />
+        </Mesh>
+        <Bones>
+            <Bone ID="11" Name="CrawleeMcGee" />
+            <Bone ID="12" Name="Body" />
+            <Bone ID="13" Name="Arm_Right" />
+            <Bone ID="14" Name="Arm_Left" />
+            <Bone ID="15" Name="Head" />
+            <Bone ID="16" Name="Eye" />
+            <Bone ID="17" Name="Tendril1" />
+            <Bone ID="18" Name="Tendril2" />
+            <Bone ID="19" Name="Tendril3" />
+            <Bone ID="20" Name="Tendril4" />
+            <Bone ID="21" Name="Tendril5" />
+            <Bone ID="22" Name="Tendril6" />
+            <Bone ID="23" Name="mixamorig:Hips" />
+            <Bone ID="24" Name="mixamorig:Spine" />
+            <Bone ID="25" Name="mixamorig:Spine1" />
+            <Bone ID="26" Name="mixamorig:Spine2" />
+            <Bone ID="27" Name="mixamorig:Neck" />
+            <Bone ID="28" Name="mixamorig:Head" />
+            <Bone ID="29" Name="mixamorig:HeadTop_End" />
+            <Bone ID="30" Name="Eye_Base" />
+            <Bone ID="31" Name="Eye_Pupil" />
+            <Bone ID="32" Name="Tendril_Root" />
+            <Bone ID="33" Name="TendrilA" />
+            <Bone ID="34" Name="Base1" />
+            <Bone ID="35" Name="Mid1" />
+            <Bone ID="36" Name="End1" />
+            <Bone ID="37" Name="TendrilB" />
+            <Bone ID="38" Name="Base2" />
+            <Bone ID="39" Name="Mid2" />
+            <Bone ID="40" Name="End2" />
+            <Bone ID="41" Name="TendrilC" />
+            <Bone ID="42" Name="Base3" />
+            <Bone ID="43" Name="Mid3" />
+            <Bone ID="44" Name="End3" />
+            <Bone ID="45" Name="TendrilD" />
+            <Bone ID="46" Name="Base4" />
+            <Bone ID="47" Name="Mid4" />
+            <Bone ID="48" Name="End4" />
+            <Bone ID="49" Name="TendrilE" />
+            <Bone ID="50" Name="Base5" />
+            <Bone ID="51" Name="Mid5" />
+            <Bone ID="52" Name="End5" />
+            <Bone ID="53" Name="TendrilF" />
+            <Bone ID="54" Name="Base6" />
+            <Bone ID="55" Name="Mid6" />
+            <Bone ID="56" Name="End6" />
+            <Bone ID="57" Name="mixamorig:LeftShoulder" />
+            <Bone ID="58" Name="mixamorig:LeftArm" />
+            <Bone ID="59" Name="mixamorig:LeftForeArm" />
+            <Bone ID="60" Name="mixamorig:LeftHand" />
+            <Bone ID="61" Name="mixamorig:LeftHandThumb1" />
+            <Bone ID="62" Name="mixamorig:LeftHandThumb2" />
+            <Bone ID="63" Name="mixamorig:LeftHandThumb3" />
+            <Bone ID="64" Name="mixamorig:LeftHandThumb4" />
+            <Bone ID="65" Name="mixamorig:LeftHandIndex1" />
+            <Bone ID="66" Name="mixamorig:LeftHandIndex2" />
+            <Bone ID="67" Name="mixamorig:LeftHandIndex3" />
+            <Bone ID="68" Name="mixamorig:LeftHandIndex4" />
+            <Bone ID="69" Name="mixamorig:LeftHandMiddle1" />
+            <Bone ID="70" Name="mixamorig:LeftHandMiddle2" />
+            <Bone ID="71" Name="mixamorig:LeftHandMiddle3" />
+            <Bone ID="72" Name="mixamorig:LeftHandMiddle4" />
+            <Bone ID="73" Name="mixamorig:LeftHandRing1" />
+            <Bone ID="74" Name="mixamorig:LeftHandRing2" />
+            <Bone ID="75" Name="mixamorig:LeftHandRing3" />
+            <Bone ID="76" Name="mixamorig:LeftHandRing4" />
+            <Bone ID="77" Name="mixamorig:LeftHandPinky1" />
+            <Bone ID="78" Name="mixamorig:LeftHandPinky2" />
+            <Bone ID="79" Name="mixamorig:LeftHandPinky3" />
+            <Bone ID="80" Name="mixamorig:LeftHandPinky4" />
+            <Bone ID="81" Name="mixamorig:RightShoulder" />
+            <Bone ID="82" Name="mixamorig:RightArm" />
+            <Bone ID="83" Name="mixamorig:RightForeArm" />
+            <Bone ID="84" Name="mixamorig:RightHand">
+                <Sockets>
+                    <Socket ID="115" Name="EatPlayerCamera" CreStamp="0" ModStamp="1595201950" WorldPos="-0.775 1.489 -0.024" Rotation="0 0 0" Scale="1 1 1" SourceBoneName="" />
+                </Sockets>
+            </Bone>
+            <Bone ID="85" Name="mixamorig:RightHandThumb1" />
+            <Bone ID="86" Name="mixamorig:RightHandThumb2" />
+            <Bone ID="87" Name="mixamorig:RightHandThumb3" />
+            <Bone ID="88" Name="mixamorig:RightHandThumb4" />
+            <Bone ID="89" Name="mixamorig:RightHandIndex1" />
+            <Bone ID="90" Name="mixamorig:RightHandIndex2" />
+            <Bone ID="91" Name="mixamorig:RightHandIndex3" />
+            <Bone ID="92" Name="mixamorig:RightHandIndex4" />
+            <Bone ID="93" Name="mixamorig:RightHandMiddle1" />
+            <Bone ID="94" Name="mixamorig:RightHandMiddle2" />
+            <Bone ID="95" Name="mixamorig:RightHandMiddle3" />
+            <Bone ID="96" Name="mixamorig:RightHandMiddle4" />
+            <Bone ID="97" Name="mixamorig:RightHandRing1" />
+            <Bone ID="98" Name="mixamorig:RightHandRing2" />
+            <Bone ID="99" Name="mixamorig:RightHandRing3" />
+            <Bone ID="100" Name="mixamorig:RightHandRing4" />
+            <Bone ID="101" Name="mixamorig:RightHandPinky1" />
+            <Bone ID="102" Name="mixamorig:RightHandPinky2" />
+            <Bone ID="103" Name="mixamorig:RightHandPinky3" />
+            <Bone ID="104" Name="mixamorig:RightHandPinky4" />
+            <Bone ID="105" Name="mixamorig:LeftUpLeg" />
+            <Bone ID="106" Name="mixamorig:LeftLeg" />
+            <Bone ID="107" Name="mixamorig:LeftFoot" />
+            <Bone ID="108" Name="mixamorig:LeftToeBase" />
+            <Bone ID="109" Name="mixamorig:LeftToe_End" />
+            <Bone ID="110" Name="mixamorig:RightUpLeg" />
+            <Bone ID="111" Name="mixamorig:RightLeg" />
+            <Bone ID="112" Name="mixamorig:RightFoot" />
+            <Bone ID="113" Name="mixamorig:RightToeBase" />
+            <Bone ID="114" Name="mixamorig:RightToe_End" />
+        </Bones>
+        <Shapes />
+        <Bodies />
+        <Joints />
+        <Animations>
+            <Animation Name="McGee_Idle" File="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/animations/McGee_Idle.fbx" Layer="Default" Speed="1" />
+            <Animation Name="McGee_Walk" File="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/animations/McGee_Walk.fbx" Layer="Default" Speed="0.25" />
+            <Animation Name="McGee_Run" File="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/animations/McGee_Run.fbx" Layer="Default" Speed="0.175" />
+            <Animation Name="McGee_EatPlayer" File="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/animations/McGee_EatPlayer.fbx" Layer="Default" Speed="1" />
+            <Animation Name="McGee_Hear" File="mods/RemnantHusks/entities/cantaffordaname/character/CrawleeMcGee/animations/McGee_Hear.fbx" Layer="Default" Speed="1" />
+        </Animations>
+        <ProcAnimations />
+    </ModelData>
+    <UserDefinedVariables EntityType="Agent_DeepseaSuit">
+        <Var Name="Health" Value="100" />
+        <Var Name="Toughness" Value="0" />
+        <Var Name="EventTag" Value="" />
+        <Var Name="VoiceSourceBone" Value="" />
+        <Var Name="CastShadows" Value="true" />
+        <Var Name="EffectsOnTime" Value="1" />
+        <Var Name="EffectsOffTime" Value="1" />
+        <Var Name="CharBodySize" Value="1 2 1" />
+        <Var Name="MeshPositionOffset" Value="0 0 0" />
+        <Var Name="MeshRotationOffset" Value="0 0 0" />
+        <Var Name="MeshScaleOffset" Value="1 1 1" />
+        <Var Name="CharBodyPosBone" Value="mixamorig:Hips" />
+        <Var Name="CharBodyBoneIsFeet" Value="false" />
+        <Var Name="CharBodyBoneYOffset" Value="0" />
+        <Var Name="CustomScriptFile" Value="agent_mcgee.hps" />
+        <Var Name="CustomScriptClass" Value="cScrAgentMcGee" />
+        <Var Name="HeadTracker_Bones" Value="mixamorig:Neck" />
+        <Var Name="HeadTracker_BoneMuls" Value="0.5" />
+        <Var Name="HeadTracker_ChestBone" Value="mixamorig:Spine1" />
+        <Var Name="HeadTracker_SpeedMul" Value="1" />
+        <Var Name="HeadTracker_MaxSpeed" Value="1" />
+        <Var Name="HeadTracker_MaxAngle" Value="45" />
+        <Var Name="CharMover_IdleAnim" Value="McGee_Idle" />
+        <Var Name="CharMover_WalkAnim" Value="McGee_Walk" />
+        <Var Name="CharMover_RunAnim" Value="McGee_Run" />
+        <Var Name="CharMover_BackwardAnim" Value="" />
+        <Var Name="CharMover_IdleExtraAnim" Value="" />
+        <Var Name="CharMover_IdleExtraMinWait" Value="4" />
+        <Var Name="CharMover_IdleExtraMaxWait" Value="10" />
+        <Var Name="CharMover_IdleExtraPauseProcedural" Value="true" />
+    </UserDefinedVariables>
+</Entity>

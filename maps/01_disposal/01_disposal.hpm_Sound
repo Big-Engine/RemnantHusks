@@ -1,0 +1,12 @@
+<HPLMapTrack_Sound ID="59A77A788AC811B83FFE2A2EDB1A6E9C5797D7B0" Version="1.00">
+    <Section Name="cjwsh@DESKTOP-TKSEJFP">
+        <Objects>
+            <Sound ID="268437072" Name="Sound_1" CreStamp="1595483501" ModStamp="1595483796" WorldPos="-0.377108 5.47588 -20.9998" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="01_01_upsilon_awake/sfx/omnitool_orientation/noise_loop" MinDistance="2" MaxDistance="11" Volume="1" Active="true" UseCustomProperties="false" UID="16 1161 268437072" />
+            <Sound ID="268438304" Name="DoorScare_CloseSound" CreStamp="1595747550" ModStamp="1595748066" WorldPos="10.5 56.5 -10" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="entities_station/doors/security_hatch/close" MinDistance="20" MaxDistance="30" Volume="1" Active="false" UseCustomProperties="true" UID="16 1730 268438304" />
+            <Sound ID="268438323" Name="Sound_2" CreStamp="1595752436" ModStamp="1595752450" WorldPos="31 56.5239 -15" Rotation="0 0 0" Scale="1 1 1" SoundEntityFile="" MinDistance="1" MaxDistance="5" Volume="1" Active="true" UseCustomProperties="true" UID="16 1658 268438323" />
+        </Objects>
+    </Section>
+    <Section Name="cjwsh@DESKTOP-7R3LD3I">
+        <Objects />
+    </Section>
+</HPLMapTrack_Sound>

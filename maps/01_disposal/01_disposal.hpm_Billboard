@@ -1,0 +1,12 @@
+<HPLMapTrack_Billboard ID="59A77A788AC811B83FFE2A2EDB1A6E9C5797D7B0" Version="1.00">
+    <Section Name="cjwsh@DESKTOP-TKSEJFP">
+        <Objects>
+            <Billboard ID="268438320" Name="Billboard_1" CreStamp="1595750257" ModStamp="1595750498" WorldPos="27.8806 56.5239 1.02672" Rotation="0 -1.309 0" Scale="1 1 1" BillboardType="FixedAxis" MaterialFile="reboot_prompt_shake.mat" IsHalo="false" BillboardSize="1 0.7" HaloSourceSize="0.5 0.5 0.3" BillboardOffset="0" BillboardColor="1 1 1 1" Brightness="1" CulledByDistance="false" CulledByFog="true" ConnectLight="" RangeMinStart="-1" RangeMinEnd="-1" RangeMaxStart="-1" RangeMaxEnd="-1" />
+            <Billboard ID="268438322" Name="Billboard_2" CreStamp="1595750409" ModStamp="1595750540" WorldPos="28.0556 56.5196 1.98992" Rotation="0 -1.47857 0" Scale="1 1 1" BillboardType="FixedAxis" MaterialFile="reboot_prompt_shake.mat" IsHalo="false" BillboardSize="1 0.7" HaloSourceSize="0.5 0.5 0.3" BillboardOffset="0" BillboardColor="1 1 1 1" Brightness="1" CulledByDistance="false" CulledByFog="true" ConnectLight="" RangeMinStart="-1" RangeMinEnd="-1" RangeMaxStart="-1" RangeMaxEnd="-1" />
+            <Billboard ID="268438671" Name="Billboard_3" CreStamp="1596339329" ModStamp="1596339455" WorldPos="19.115 1.915 3.51" Rotation="-0 3.14159 -0" Scale="1 1 1" BillboardType="FixedAxis" MaterialFile="reboot_prompt_shake.mat" IsHalo="false" BillboardSize="0.528 0.3" HaloSourceSize="0.5 0.5 0.3" BillboardOffset="0" BillboardColor="1 1 1 1" Brightness="1" CulledByDistance="false" CulledByFog="true" ConnectLight="" RangeMinStart="-1" RangeMinEnd="-1" RangeMaxStart="-1" RangeMaxEnd="-1" />
+        </Objects>
+    </Section>
+    <Section Name="cjwsh@DESKTOP-7R3LD3I">
+        <Objects />
+    </Section>
+</HPLMapTrack_Billboard>

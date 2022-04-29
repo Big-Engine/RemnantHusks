@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Content Version="1.0"
+	Type="StandAlone"
+	Title="Remnant Husks"
+	Author="Can't Afford a Name"
+	Description="Add something here later in the Entry file!"
+	LauncherPic="LauncherPic.png"
+	
+	InitCfg="config/main_init.cfg"
+/>
+

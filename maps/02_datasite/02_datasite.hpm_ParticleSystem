@@ -1,0 +1,10 @@
+<HPLMapTrack_ParticleSystem ID="B3D4B8A9E6D8DD77703C39E5DA32058849232E04" Version="1.00">
+    <Section Name="cjwsh@DESKTOP-TKSEJFP">
+        <Objects>
+            <ParticleSystem ID="268440129" Name="ParticleSystem_5" CreStamp="1596091843" ModStamp="1596091890" WorldPos="5.75 42.75 -18.5" Rotation="0 0 0" Scale="1 1 1" File="fog_ambient_light_soft.ps" Color="0.80368 0.898438 0.898437 1" Brightness="0.025" FadeAtDistance="true" MinFadeDistanceStart="2" MaxFadeDistanceStart="100" MinFadeDistanceEnd="1" MaxFadeDistanceEnd="110" CulledByDistance="true" CulledByFog="true" ConnectLight="" UID="16 890 268440129" />
+        </Objects>
+    </Section>
+    <Section Name="cjwsh@DESKTOP-7R3LD3I">
+        <Objects />
+    </Section>
+</HPLMapTrack_ParticleSystem>

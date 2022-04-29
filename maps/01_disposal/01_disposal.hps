@@ -1,0 +1,621 @@
+#include "interfaces/Map_Interface.hps"
+#include "base/Inputhandler_Types.hps"
+
+#include "helpers/helper_map.hps"
+#include "helpers/helper_props.hps"
+#include "helpers/helper_effects.hps"
+#include "helpers/helper_audio.hps"
+#include "helpers/helper_imgui.hps"
+#include "helpers/helper_sequences.hps"
+#include "helpers/helper_game.hps"
+#include "helpers/helper_modules.hps"
+#include "helpers/helper_ai.hps"
+#include "helpers/helper_player.hps"
+#include "helpers/helper_areas.hps"
+
+#include "helper_custom_depth.hps"
+#include "helpers/helper_imgui.hps"
+#include "helpers/helper_imgui_station.hps"
+#include "helpers/helper_imgui_station_app_error.hps"
+#include "helpers/helper_imgui_station_app_audioplayback.hps"
+#include "helpers/helper_imgui_station_app_photoviewer.hps"
+
+//--------------------------------------------------
+ 
+/*Place any global values here. These must be const variables as they will not be saved*/
+/*This is also the place for enums and classes, but these should be avoided whenever possible*/
+
+//--------------------------------------------------
+ 
+class cScrMap : iScrMap
+{
+	//--------------------------------------------
+ 
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// MAIN CALLBACKS
+	// ==============
+	//{///////////////////////////////////////////////////////////////////////////////////////
+ 
+	//-------------------------------------------------------
+ 
+	////////////////////////////
+	// Set up map environment
+	void Setup()
+	{
+	
+	}
+	
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// Run first time starting map
+	void OnStart()
+	{
+		PlayerHands_SetHandModel_DeepSea();
+		Player_SetRunBreathingDisabled(true);
+		Player_SetFlashlightDisabled(true);
+		Player_ShowCrossHairIcons(false);
+		
+		Seq_Start("");
+		CameraAnimation_Begin("StartUpAnimation", "", false);
+	}
+
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// Run when entering map
+	void OnEnter()
+	{
+		
+	}
+
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// Run when leaving map
+	void OnLeave()
+	{
+	}
+
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// The player has died.
+	void OnPlayerKilled(int alRecentDeaths, const tString&in asSource)
+	{
+	}
+
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// To get when player makes input (mostly used for debug)
+	void OnAction(int alAction, bool abPressed) 
+	{
+		if(abPressed==false) return;
+		
+		if(alAction == eAction_Test1)
+		{
+		}
+	}
+
+	//-------------------------------------------------------
+
+	////////////////////////////
+	// This only used for pure debug purposes when info needs to printed.
+	float DrawDebugOutput(cGuiSet @apSet,iFontData @apFont,float afY)
+	{
+		//afY = cLux_DrawDebugText("My Debug value:"+..., afY);
+		return afY;
+	}
+ 
+	//-------------------------------------------------------
+ 
+	//} END MAIN CALLBACKS
+ 
+ 
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// MAIN FUNCTIONS
+	// ==============
+	//{///////////////////////////////////////////////////////////////////////////////////////
+ 
+	//-------------------------------------------------------
+ 
+	/*Put any variables that are used in more than one scene here.*/
+ 
+	//-------------------------------------------------------
+ 
+	/*Put any functions that are used in more than one scene here.*/
+ 
+	//-------------------------------------------------------
+ 
+	//} END MAIN FUNCTIONS
+	
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// SCENE 1 *Reactivate*
+	// ==============
+	//{//////////////////////////////////////////////////////////////////////////////////////
+ 
+		 /////////////////////////////////////////
+		 // General
+		 //{//////////////////////////////////////
+		 
+		//-------------------------------------------------------
+	 
+		/*Put any variables that are used by many events in Scene 1 here.*/
+		
+		int mStaticEffect;
+	 
+		//-------------------------------------------------------
+	 
+		/*Put any functions that are used by many events in Scene 1 here.*/
+
+		//-------------------------------------------------------
+		
+		//} END General	
+	 
+		 /////////////////////////////////////////
+		 // Event *Stand Up*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene 1, Event X here.*/
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene 1, Event X here.*/
+		 
+		 cSequenceStatesData mStartSequence;
+		 
+		 void Seq_Start(const tString &in asTimer)
+		 {
+			Sequence_Begin("Seq_Start", mStartSequence);
+			
+			Sequence_Wait(3);
+			
+			if(Sequence_DoStepAndWait(0.75f))
+			{
+				Prop_MoveLinearTo("TextBlock_1","TextMoveArea_1",5,1,0,true);
+			}
+			else if(Sequence_DoStepAndWait(3))
+			{
+				Prop_MoveLinearTo("TextBlock_2","TextMoveArea_2",1,0.1f,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1))
+			{
+				Prop_MoveLinearTo("TextBlock_3","TextMoveArea_3",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(0.75f))
+			{
+				Prop_MoveLinearTo("TextBlock_4","TextMoveArea_4",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(0.75f))
+			{
+				Prop_MoveLinearTo("TextBlock_5","TextMoveArea_5",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(3))
+			{
+				Prop_MoveLinearTo("TextBlock_6","TextMoveArea_6",1,0.05f,0,true);
+			}
+			else if(Sequence_DoStepAndWait(0.75f))
+			{
+				Prop_MoveLinearTo("TextBlock_7","TextMoveArea_7",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(0.75f))
+			{
+				Prop_MoveLinearTo("TextBlock_8","TextMoveArea_8",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(3))
+			{
+				Prop_MoveLinearTo("TextBlock_9","TextMoveArea_9",1,0.05f,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1))
+			{
+				Prop_MoveLinearTo("TextBlock_10","TextMoveArea_10",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(2))
+			{
+				Prop_MoveLinearTo("TextBlock_11","TextMoveArea_11",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1))
+			{
+				Prop_MoveLinearTo("TextBlock_12","TextMoveArea_12",5,3,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1))
+			{
+				Prop_MoveLinearTo("TextBlock_13","TextMoveArea_13",5,3,0,true);
+				mStaticEffect = Effect_Screen_Start("00_04_scan_noise.mat", cVector2f(0.5, 0.5), cVector2f(2,1),  1, 5, 0.75f, 0.01f);
+				Sound_CreateAtEntity("ScanStartup","Entities_Special/Equipment/scanner/omicron/omicron_scan_seq_success","Player",0.0f,false,1.0f);
+			}
+			else if(Sequence_DoStepAndWait(1.5f))
+			{
+				Prop_MoveLinearTo("TextBlock_14","TextMoveArea_14",5,1,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1.5f))
+			{
+				Prop_MoveLinearTo("TextBlock_15","TextMoveArea_15",5,1,0,true);
+			}
+			else if(Sequence_DoStepAndWait(1.5f))
+			{
+				Prop_MoveLinearTo("TextBlock_16","TextMoveArea_16",5,1,0,true);
+			}
+			else if(Sequence_DoStepAndWait(0.5f))
+			{
+				CameraAnimation_End();
+				Effect_VideoDistortion_Start(1.0f,0.25f,0.25f,0.25f,0.0f);
+				Player_SetHealth(0.1f);
+				Player_ShowCrossHairIcons(true);
+				Player_SetFlashlightDisabled(false);
+				Player_Teleport("IntroTeleport",true);
+				CameraAnimation_Begin("WakeUpAnimation", "", true);
+			}
+			
+			Sequence_End();
+		 }
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Stand Up*
+	 
+	 //} END SCENE 1
+	 
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// SCENE 2 *Env Effects*
+	// ==============
+	//{//////////////////////////////////////////////////////////////////////////////////////
+ 
+		 /////////////////////////////////////////
+		 // General
+		 //{//////////////////////////////////////
+		 
+		//-------------------------------------------------------
+	 
+		/*Put any variables that are used by many events in Scene 2 here.*/
+			 
+		//-------------------------------------------------------
+	 
+		/*Put any functions that are used by many events in Scene 2 here.*/
+
+		//-------------------------------------------------------
+		
+		//} END General	
+	 
+		 /////////////////////////////////////////
+		 // Event *Light Flicker*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene 2, Event X here.*/
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene 2, Event X here.*/
+		 
+		 cSequenceStatesData mLightFlickerSequence;
+		 
+		 void Seq_LightFlicker(const tString &in asTimer)
+		 {
+			Sequence_Begin("Seq_LightFlicker", mLightFlickerSequence);
+			
+			
+			Sequence_End();
+		 }
+		 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Light Flicker*
+		 
+		 /////////////////////////////////////////
+		 // Event *Incinerator Surge*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene 2, Event X here.*/
+		 
+		 bool mbTriggeredSurge = false;
+		 float boxBrightness = 0.01f;
+		 int SurgeTimerLoop = 0;
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene 2, Event X here.*/
+		 
+		 bool Trigger_Surge(const tString &in asParent, const tString &in asChild, int alState)
+		 {
+			if(alState==1 && !mbTriggeredSurge)
+			{
+				//mbTriggeredSurge = true; DON'T FORGET TO REENABLE THIS
+				Effect_Shake_Start(0.25f,1,0.5f,3,cVector3f(1, 1, 1),0);
+				Map_AddTimer("IncineratorSurgeTimer", 0.0000001f, "IncineratorSurgeTimer");
+			}
+			return true;
+		 }
+		 
+		 void IncineratorSurgeTimer(const tString &in asTimer)
+			{
+				if(SurgeTimerLoop < 100)
+				{
+					boxBrightness += 0.5f;
+					Light_SetBrightness("AmbientBoxLight", boxBrightness);
+					SurgeTimerLoop++;
+					cLux_AddDebugMessage(""+SurgeTimerLoop, false);
+					Map_AddTimer("IncineratorSurgeTimer", 0.0000001f, "IncineratorSurgeTimer");
+				}
+				else if(SurgeTimerLoop >= 100)
+				{
+					Map_AddTimer("IncineratorCoolDownTimer", 0.0000001f, "IncineratorCoolDownTimer");
+				}
+			}
+			
+		 void IncineratorCoolDownTimer(const tString &in asTimer)
+		 {
+			if(SurgeTimerLoop > 0)
+			{
+				boxBrightness -= 0.5f;
+				Light_SetBrightness("AmbientBoxLight", boxBrightness);
+				SurgeTimerLoop--;
+				cLux_AddDebugMessage(""+SurgeTimerLoop, false);
+				Map_AddTimer("IncineratorCoolDownTimer", 0.0000001f, "IncineratorCoolDownTimer");
+			}
+		 }
+		 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Incinerator Surge**
+	 
+	 //} END SCENE 2
+	 
+	 //---------------------------------------------------------
+ 
+	//////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// SCENE 3 *Activate Zepplin*
+	// ==============
+	//{//////////////////////////////////////////////////////////////////////////////////////
+ 
+		 /////////////////////////////////////////
+		 // General
+		 //{//////////////////////////////////////
+		 
+		//-------------------------------------------------------
+	 
+		/*Put any variables that are used by many events in Scene 3 here.*/
+	 
+		//-------------------------------------------------------
+	 
+		/*Put any functions that are used by many events in Scene 3 here.*/
+
+		//-------------------------------------------------------
+		
+		//} END General	
+	 
+		 /////////////////////////////////////////
+		 // Event *Going Up*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene X, Event X here.*/
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene X, Event X here.*/
+		 
+		 void Zepplin_Button_ConnectionStateChange(const tString &in asEntity, int alState)
+		{
+			if(alState==1)
+			{
+				Prop_MoveLinearTo("Zepplin_Platform_Modified_1","Zeppelin_Target_Top",3,3,3,true);
+				Sound_CreateAtEntity("ZepplinButtonOn", "01_02_upsilon_inside_02/sfx/controlroom/powerbutton", "Zepplin_Button");
+				Seq_PreloadMap("");
+			}
+		}
+	 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Going Up*
+		 
+		 //-------------------------------------------------------
+		 
+		 /////////////////////////////////////////
+		 // Event *Preload Next Map*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene X, Event X here.*/
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene X, Event X here.*/
+		 
+		 cSequenceStatesData mPreloadMapSequence;
+		 
+		 void Seq_PreloadMap(const tString &in asTimer)
+		 {
+			Sequence_Begin("Seq_PreloadMap", mPreloadMapSequence);
+			Sequence_Wait(4);
+			if (Sequence_DoStepAndContinue())
+			{
+				Map_Preload("02_datasite.hpm");
+				cLux_AddDebugMessage("Started preloading the next map!", false);
+			}
+			Sequence_End();
+		 }
+		 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Preload Next Map*
+	 
+	 //} END SCENE 3
+ 
+	 //----------------------------------------------------------
+	 
+	 //////////////////////////////////////////////////////////////////////////////////////////
+	// ==============
+	// SCENE 4 *Door Scare*
+	// ==============
+	//{//////////////////////////////////////////////////////////////////////////////////////
+ 
+		 /////////////////////////////////////////
+		 // General
+		 //{//////////////////////////////////////
+		 
+		//-------------------------------------------------------
+	 
+		/*Put any variables that are used by many events in Scene 4 here.*/
+	 
+		//-------------------------------------------------------
+	 
+		/*Put any functions that are only used in Scene 4 here.*/
+
+		//-------------------------------------------------------
+		
+		//} END General	
+	 
+		 /////////////////////////////////////////
+		 // Event *Slam Door*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene 4, Event X here.*/
+		 
+		 bool mbTriggeredFirst = false;
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functionsthat are only used in Scene 4, Event X here.*/
+		 
+		 bool Trigger_DoorScare_FirstClose(const tString &in asParent, const tString &in asChild, int alState)
+		 {
+			if(alState==-1 && !mbTriggeredFirst)
+			{
+				SlideDoor_SetOpenAmount("Door_Scare", 0.0f, false);
+				Sound_Play("DoorScare_CloseSound", 0.0f, false);
+				mbTriggeredFirst = true;
+			}
+			return true;
+		 }
+		 
+		 void DoorScare_Button_ConnectionStateChange(const tString &in asEntity, int alState)
+		 {
+			if(alState==1)
+			{
+				Map_AddTimer("DoorScareTimer", 0.45f, "DoorScareSlam");
+				cLux_AddDebugMessage("Pressed Button", false);
+			}
+		 }
+		 
+		 void DoorScareSlam(const tString &in asTimer)
+		 {
+			SlideDoor_SetClosed("Door_Scare", true, true);
+			SlideDoor_SetOpenAmount("Door_Scare", 0.0f, true);
+			Sound_CreateAtEntity("SlamSound", "Entities_Station/doors/slidedoor_stairs/open_end", "Player");
+			Button_SetLocked("Door_Scare_Button", true, true);
+			cLux_AddDebugMessage("Slammed the door", false);
+		 }
+	 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Slam Door*
+		 
+		 //-------------------------------------------------------
+		 
+		 /////////////////////////////////////////
+		 // Event *Load Next Map*
+		 //{//////////////////////////////////////
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any variables that are only used in Scene X, Event X here.*/
+		 
+		 bool mbTriggeredClose = false;
+		 bool mbTriggeredTransition = false;
+	 
+		 //-------------------------------------------------------
+	 
+		 /*Put any functions that are only used in Scene X, Event X here.*/
+		 
+		 bool Trigger_CloseVent(const tString &in asParent, const tString &in asChild, int alState)
+		 {
+			if(alState==1 && !mbTriggeredClose)
+			{
+				SlideDoor_SetClosed("slidedoor_hatch_maintenance_tunnels_2", true, false);
+				MovingButton_SetLocked("deepsea_small_3", true, true);
+				mbTriggeredClose = true;
+			}
+			return true;
+		 }
+		 
+		 bool Trigger_LevelTransition(const tString &in asParent, const tString &in asChild, int alState)
+		 {
+			if(alState==1 && !mbTriggeredTransition)
+			{
+				Map_ChangeMap("02_datasite.hpm", "", "MapTransferArea_Disposal", "", "");
+				mbTriggeredTransition = true;
+			}
+			return true;
+		 }
+		 
+		 //-------------------------------------------------------
+	 
+		 //} END Event *Preload Next Map*
+	 
+	 //} END SCENE 4
+ 
+	 /////////////////////////////////////////
+	 // ==============
+	 // TERMINALS
+	 // ==============
+	 //{//////////////////////////////////////
+ 
+		 //-------------------------------------------------------
+	 
+		 /////////////////////////////////////////
+		 // Terminal Zepplin_Terminal
+		 //{//////////////////////////////////////
+		 void Terminal_Stats_OnGui(const tString&in asEntityName, float asTimeStep)
+		 {
+			StationGuiBG_Scanlines();
+			
+			//Setting up Main Menu Window
+			cImGuiWindowData windowMenuData = StationGui_CreateDefaultWindowData();
+			cImGuiTextFrameData menuTextFrame = ImGui_GetDefaultTextFrame();
+			menuTextFrame.mFont.SetFile("sansation_large_bold.fnt");
+			menuTextFrame.mFontAlign = eFontAlign_Left;
+			menuTextFrame.mbUseBackgroundGfx = false;
+			menuTextFrame.mFont.mvSize = ImGui_NrmSizeKeepRatio(0.04);
+			
+			ImGui_SetTransCategory("");
+			StationGui_DoWindowStart("Disposal Statistics", windowMenuData, ImGui_NrmPos(0, 0, 0), ImGui_NrmSize(1, 1), false);
+			ImGui_DoTextFrameExt("Put text here if you want.", 0, 0, 0, menuTextFrame, ImGui_NrmPos(0.025f, 0.025f, 2), ImGui_NrmSizeGroup(0.95, 0.95));
+			StationGui_DoWindowEnd();
+			
+			//Setting up menu buttons
+			bool BackButtonEnabled = true;
+			bool RobotDrained = false;
+			
+			ImGui_SetModUseInput(true);
+			if(RobotDrained)
+			{
+				if (ImGui_DoButtonExt("Zepplin_Button", "Call Service Lift", StationGui_CreateDefaultButtonData(), cVector3f(425,525,1), cVector2f(300,45)))
+				{
+					
+				}
+			}
+			else
+			{
+				StationGui_BigStatusMessage_Old("ZepplinError", gStationGuiColor_Warning, 0.75);
+			}
+
+		 //} END Terminal Terminal_Stats
+	
+	//} END TERMINALS
+  }
+}
